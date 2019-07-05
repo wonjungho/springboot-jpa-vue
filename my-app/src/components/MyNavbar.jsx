@@ -4,11 +4,14 @@ import {Navbar,Nav,Form,FormControl,Button} from 'react-bootstrap'
 const MyNavbar = () =>{
     return(
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+            <Navbar.Brand href="#home">BITCAMP</Navbar.Brand>
             <Nav className="mr-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <Nav.Link href="#features">스케쥴러</Nav.Link>
+                <Nav.Link href="#features">회원가입</Nav.Link>
+                <Nav.Link href="#pricing">로그인</Nav.Link>
+                <Nav.Link href="#pricing">정보수정</Nav.Link>
+                <Nav.Link href="#pricing">회원탈퇴</Nav.Link>
             </Nav>
             <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

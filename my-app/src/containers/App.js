@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
-import '../assests/css/App.css'
-import Hello from '../components/Hello'
+import '../assets/css/App.css'
+import Login from './Login'
 import MyNavbar from '../components/MyNavbar'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+
 
 class App extends Component {
   render(){
     return (
       <>
-      <MyNavbar></MyNavbar>
-        <Hello name='길동'></Hello>
-    </>
+      <MyNavbar/>
+      <Login></Login>
+      </>
     );
   }
 }
