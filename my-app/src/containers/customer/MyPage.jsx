@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Table, Figure } from 'react-bootstrap';
-import photo from '../assets/images/dddd.jpeg';
+import photo from '../../assets/images/dddd.jpeg';
 class MyPage extends Component {
     constructor(props) {
         super(props)

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import '../assets/css/App.css'
-import MyNavbar from '../components/MyNavbar'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import '../../assets/css/App.css'
+import MyNavbar from '../../components/MyNavbar.jsx'
+
 
 
 
