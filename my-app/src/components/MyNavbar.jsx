@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar,Nav,Form,FormControl,Button,NavDropdown} from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import Login from '../containers/customer/Login.jsx';
 import Join from '../containers/customer/Join.jsx';
 import Home from '../containers/Home.jsx'
@@ -9,12 +9,13 @@ import Hello from '../containers/Hello.jsx'
 import LigthSwitch from '../containers/LightSwitch.jsx'
 import Timer from '../containers/Timer.jsx'
 import TodoApp from '../containers/TodoApp.jsx'
+import Clock from '../containers/Clock.jsx'
 
 const MyNavbar = () =>{
     return(
         <Router>
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand > <Link to="/home">BITCAMP</Link></Navbar.Brand>
+            <Navbar.Brand href="/home">BITCAMP</Navbar.Brand>
             <Nav className="mr-auto">
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/todoapp">스케쥴러</Nav.Link>
@@ -22,6 +23,7 @@ const MyNavbar = () =>{
                 <NavDropdown.Item href="/hello">Hello</NavDropdown.Item>
                 <NavDropdown.Item href="/switch">Switch</NavDropdown.Item>
                 <NavDropdown.Item href="/timer">Timer</NavDropdown.Item>
+                <NavDropdown.Item href="/clock">Clock</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="유저관리" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/join">회원가입</NavDropdown.Item>
@@ -44,6 +46,7 @@ const MyNavbar = () =>{
         <Route path="/switch" component={LigthSwitch}/>
         <Route path="/timer" component={Timer}/>
         <Route path="/todoapp" component={TodoApp}/>
+        <Route path="/clock" component={Clock}/>
         </Router>
     );
 }

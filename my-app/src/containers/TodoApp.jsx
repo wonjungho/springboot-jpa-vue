@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import TodoList from './TodoList'
+import TodoList from '../components/TodoList.jsx'
 import {Form,Button} from'react-bootstrap'
 
 class TodoApp extends Component{
@@ -17,10 +17,10 @@ class TodoApp extends Component{
             <Form onSubmit={this.handleSubmit}>
                 <Form.Group>
                 <Form.Label htmlFor="new-todo">What needs to be done?</Form.Label>
-                <Form.Control id="new-toto" onChange={this.handleChange}value={this.state.text}/>
+                <Form.Control id="new-toto" onChange={this.handleChange} value={this.state.text} type="text"/>
                 </Form.Group>
                 <Form.Group>
-                <Button type="submit">
+                <Button className="btn btn-info" type="submit">
                     Add#{this.state.items.length+1}
                 </Button>
                 </Form.Group>
@@ -46,7 +46,4 @@ class TodoApp extends Component{
         }));
     }
 }
-
-
-
 export default TodoApp
