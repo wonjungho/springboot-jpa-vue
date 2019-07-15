@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/customers")
-@CrossOrigin(origins = "http://localhost:8080",maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3000",maxAge = 3600)
 public class CustomerController {
     @Autowired CustomerService customerService;
     @Autowired CustomerDTO customer;

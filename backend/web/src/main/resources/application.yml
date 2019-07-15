@@ -1,11 +1,11 @@
 spring:
     datasource:
-        url: jdbc:h2:mem:testdb;
-        driverClassName: org.h2.Driver
-        username: sa
-        password:
+        url: projectwoon.cnlle4ggkcrb.ap-northeast-2.rds.amazonaws.com
+        driverClassName: org.mariadb.jdbc.Driver
+        username: projectwoon1
+        password: projectwoon1
     jpa:
-        database-platform: org.hibernate.dialect.H2Dialect
+        database-platform: database-platform:org.hibernate.dialect.MySQL5InnoDBDialect
         hibernate:
             ddl-auto: update 
 server:

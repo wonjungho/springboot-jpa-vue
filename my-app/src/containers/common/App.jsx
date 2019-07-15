@@ -6,9 +6,12 @@ import MyNavbar from '../../components/MyNavbar.jsx'
 
 
 class App extends Component {
+  constructor(props){
+    super(props)
+  }
   render(){
     return (
-      <div>
+      <div className="wrapper">
       <MyNavbar/>
       </div>
     );
